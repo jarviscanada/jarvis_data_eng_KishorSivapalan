@@ -12,7 +12,6 @@ if [ $# -ne  5 ]; then
 fi
 
 #Save machine statistics in MB and current machine hostname to variables
-vmstat_mb=$(vmstat --unit M)
 hostname=$(hostname -f)
 lscpu_out=`lscpu`
 mem_out=`cat /proc/meminfo`
@@ -26,16 +25,15 @@ L2_cache=$(echo "$lscpu_out"  | egrep "^L2 cache:" | awk '{print $3}' | xargs | 
 total_mem=$(echo "$mem_out"  | egrep "^MemTotal\:" | awk '{print $2}' | xargs)
 
 #Current time in `2019-11-26 14:40:19` UTC format
-#timestamp=$(vmstat -t | awk ...
 timestamp=$(date '+%Y-%m-%d %T')
 
-#PSQL command: Inserts server usage data into host_usage table
+#PSQL command: Inserts server usage data into host_info table
 insert_stmt="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, \"timestamp\")
 VALUES ('$hostname', $cpu_number, '$cpu_architecture', '$cpu_model', $cpu_mhz, $L2_cache, $total_mem, '$timestamp');"
 
 #set up env var for pql cmd
 export PGPASSWORD=$psql_password
 
-#Insert date into a database
+#Insert data into a database
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
 exit $?
