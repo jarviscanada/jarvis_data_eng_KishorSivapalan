@@ -122,29 +122,31 @@ Usage: Copy and paste the relevant query into the database console. **Note:** Re
 ## Database Modeling
 This project requires two tables to record data: one for hardware information (i.e. `host_info`) and another for hardware resource usage (i.e. `host_usage`).
 
-The schema for `host_info`:
-|Variable|Type|Description|
-|--|--|--|
-|id|SERIAL|The primary key; it is a unique identifier for each node|
-|hostname|VARCHAR|The unique full name of the node|
-|cpu_number|INT|The number of CPUs in the node|
-|cpu_architecture|VARCHAR|The CPU architecture in the node|
-|cpu_model|VARCHAR|The CPU model in the node|
-|cpu_mhz|REAL|The CPU speed on the node in MHz|
-|L2_cache|INT|The size of the L2 cache on the node in KB|
-|total_mem|INT|The total memory on the node in KB|
-|timestamp|TIMESTAMP|The timestamp of the node at instantiation|
+- For `host_info`:
 
-The schema for `host_usage`:
 |Variable|Type|Description|
 |--|--|--|
-|timestamp|TIMESTAMP|The timestamp of the node at instantiation|
-|host_id|VARCHAR|The foreign key; it is a reference to the `id` in `host_info`|
-|memory_free|INT|The amount of free memory on the node in MB|
-|cpu_idle|INT|The percentage of the CPU in idle mode|
-|cpu_kernel|INT|The percentage of the CPU in kernel mode|
-|disk_io|INT|The number of disk I/O|
-|disk_available|INT|The available disk space from the root directory in MB|
+|`id`|SERIAL|The primary key; it is a unique identifier for each node|
+|`hostname`|VARCHAR|The unique full name of the node|
+|`cpu_number`|INT|The number of CPUs in the node|
+|`cpu_architecture`|VARCHAR|The CPU architecture in the node|
+|`cpu_model`|VARCHAR|The CPU model in the node|
+|`cpu_mhz`|REAL|The CPU speed on the node in MHz|
+|`L2_cache`|INT|The size of the L2 cache on the node in KB|
+|`total_mem`|INT|The total memory on the node in KB|
+|`timestamp`|TIMESTAMP|The timestamp of the node at instantiation|
+
+- For `host_usage`:
+
+|Variable|Type|Description|
+|--|--|--|
+|`timestamp`|TIMESTAMP|The timestamp of the node at instantiation|
+|`host_id`|VARCHAR|The foreign key; it is a reference to the `id` in `host_info`|
+|`memory_free`|INT|The amount of free memory on the node in MB|
+|`cpu_idle`|INT|The percentage of the CPU in idle mode|
+|`cpu_kernel`|INT|The percentage of the CPU in kernel mode|
+|`disk_io`|INT|The number of disk I/O|
+|`disk_available`|INT|The available disk space from the root directory in MB|
 
 # Test
 
