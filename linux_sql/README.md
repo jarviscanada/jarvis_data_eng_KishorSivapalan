@@ -28,7 +28,7 @@ The following is a sequence of steps to set up the program on your device. If an
 
  6. Automate the `host_usage.sh` script to refresh every minute by using `crontab`:
 
-	```
+	```shell
 	#Enter the script directory
 	cd scripts/
 	
