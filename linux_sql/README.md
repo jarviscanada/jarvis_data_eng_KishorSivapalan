@@ -117,7 +117,7 @@ This script contains queries to solve the following business cases:
  2. Average used memory in percentage over 5 mins interval for each host
  3. Detecting host failure
 
-Usage: Copy and paste the relevant query into the database console. **Note:** Remember to copy the `round5` function since business cases 2 and 3 use it in their queries.
+Usage: Copy and paste the relevant query into the database console. **Note:** Remember to copy the `round5` function since business cases 2 and 3 require it in their queries.
 
 ## Database Modeling
 This project requires two tables to record data: one for hardware information (i.e. `host_info`) and another for hardware resource usage (i.e. `host_usage`).
