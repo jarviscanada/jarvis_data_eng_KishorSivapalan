@@ -4,7 +4,7 @@
 The Jarvis Linux Cluster Administration
 
 # Quick Start
-The following is a sequence of steps to set up the program on your device. If anything is unclear, please scroll down to the **Scripts** section for explanations and examples.
+The following is a sequence of steps to set up the program on your device. If anything is unclear, please scroll down to the [Scripts](#Scripts) section for explanations and examples.
 
  1. Initialize a database using the `psql_docker.sh` script:
  
@@ -43,15 +43,18 @@ The following is a sequence of steps to set up the program on your device. If an
 
 	#List the crontab jobs
 	crontab -l
+	```
 
+	```sql
 	#Login to database and check if the information is being updated every minute
 	#Note: The password to the database is "password"
 	psql -h localhost -U postgres -W
 	SELECT * FROM host_usage;
 	```
+	
 
-	7. To view the tables, login to the database and do the following commands:
-	```
+7. To view the tables, login to the database and do the following commands:
+	```sql
 	#To view information from host_info table
 	SELECT * FROM host_info;
 
