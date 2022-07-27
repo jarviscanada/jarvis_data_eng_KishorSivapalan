@@ -4,7 +4,7 @@
 The Jarvis Linux Cluster Administration
 
 # Quick Start
-The following is a sequence of steps to set up the program on your device. If anything is unclear, please scroll down to the [Scripts](#Scripts) section for explanations and examples.
+The following is a sequence of steps to set up the program on your device. If anything is unclear, please scroll down to the **[Scripts](#Scripts)** section for explanations and examples.
 
  1. Initialize a database using the `psql_docker.sh` script:
  
