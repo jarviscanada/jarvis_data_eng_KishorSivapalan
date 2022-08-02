@@ -1,7 +1,7 @@
 # Linux Cluster Monitoring Agent
 
 # Introduction
-The Jarvis Linux Cluster Administration
+The Jarvis Linux Cluster Administration (LCA) consists of a cluster of Linux nodes running CentOS 7; the nodes are all connected through a switch. The LCA needs to collect hardware specifications and resource usage of each node. The data must be stored in an RDBMS database so that they may use the information to generate reports for future resource planning.
 
 # Quick Start
 The following is a sequence of steps to set up the program on your device. If anything is unclear, please scroll down to the **[Scripts](#Scripts)** section for explanations and examples.
@@ -63,7 +63,7 @@ The following is a sequence of steps to set up the program on your device. If an
 	```
 
 # Implementation
-This project was implemented using 
+This project was implemented using Agile methodologies (i.e. Scrum cycles), Git Flow, Linux CLI, Bash scripts, PostgreSQL, Docker, and Intellij IDE.
 
 ## Architecture
 TBD
@@ -149,12 +149,13 @@ This project requires two tables to record data: one for hardware information (i
 |`disk_available`|INT|The available disk space from the root directory in MB|
 
 # Test
+The created product is a MVP, so it was tested on a single machine rather than a Linux cluster. All the testing was done by comparing actual output to expected output. The testing consisted of running the monitoring agent and using PostgreSQL to query the recorded data, while bash scripts were run using `bash -x [script]` for debugging. 
 
 # Deployment
+The Linux Cluster Monitoring Agent can be deployed by using the source files in this GitHub repo, installing docker and provisioning a PostgreSQL database, and setting up the crontab script to auto-refresh the software. See **[Quick Start](#Quick Start)** for more information.
 
 # Improvements
 
- - Documentation (README.md) can be improved
+ - Documentation (README.md) can be more detailed
  - SQL queries can be simplified
- - Schema data types can be more specific
  - Can make a script to install all scripts rather than the user having to do so many things
