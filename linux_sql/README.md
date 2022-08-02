@@ -152,7 +152,7 @@ This project requires two tables to record data: one for hardware information (i
 The created product is a MVP, so it was tested on a single machine rather than a Linux cluster. All the testing was done by comparing actual output to expected output. The testing consisted of running the monitoring agent and using PostgreSQL to query the recorded data, while bash scripts were run using `bash -x [script]` for debugging. 
 
 # Deployment
-The Linux Cluster Monitoring Agent can be deployed by using the source files in this GitHub repo, installing docker and provisioning a PostgreSQL database, and setting up the crontab script to auto-refresh the software. See **[Quick Start](#Quick Start)** for more information.
+The Linux Cluster Monitoring Agent can be deployed by using the source files in this GitHub repo, installing docker and provisioning a PostgreSQL database, and setting up the crontab script to auto-refresh the software. See **[Quick Start](#QuickStart)** for more information.
 
 # Improvements
 
