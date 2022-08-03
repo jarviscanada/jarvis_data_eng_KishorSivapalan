@@ -35,8 +35,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KishorSiva
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Sports/Athletics
+- Online Gaming
+- Game Development
