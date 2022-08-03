@@ -1,0 +1,89 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "GPA: 3.5/4.0"
+      ],
+      "degree": "Bachelor of Engineering (Hons.)",
+      "department": "Electrical and Computer Engineering",
+      "duration": "2015-2020",
+      "school_name": "York University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_KishorSivapalan",
+  "highlighted_projects": [
+    {
+      "description": "temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.",
+      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
+      "name": "Web app for resturant"
+    },
+    {
+      "description": "temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.",
+      "git_url": null,
+      "name": "Machine Learning"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed a monitoring agent that records hardware information and resource usage data from a node in a cluster. Project was created using Linux CLI, Bash scripts, PostgreSQL, Docker and IntelliJ IDE.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    }
+  ],
+  "name": "Kishor Sivapalan",
+  "others": [
+    {
+      "bullets": [
+        "Udacity Machine Learning (2019)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Winner"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Basketball player",
+        "Competitive gaming",
+        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Developed various projects using Agile and GitFlow methodologies.",
+      "duration": "2022-Present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Docker",
+      "C"
+    ],
+    "familiar": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "React"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "Data Structures"
+    ]
+  },
+  "summary": "Hello, my name is Kishor! I completed my Bachelor's of Engineering degree in Computer Engineering at York University. I hope to pursue a career in front-end and full-stack development, with an interest in project management."
+}

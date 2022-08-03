@@ -1,8 +1,42 @@
-# Jarvis Data Engineering Training
-1. [Linux cluster monitoring agent (Linux and SQL)](./linux_sql) In-progress
-2. [Core Java Apps](./core_java) In-progress
-3. [Springboot Trading REST API](./springboot) In-progress
-4. [Hadoop/Hive](./hadoop) In-progress
-5. [Spark/Scala](./spark) In-progress
-6. [Cloud/DevOps](./cloud_devops) In-progress
+# Kishor Sivapalan . Jarvis Consulting
 
+Hello, my name is Kishor! I completed my Bachelor's of Engineering degree in Computer Engineering at York University. I hope to pursue a career in front-end and full-stack development, with an interest in project management.
+
+## Skills
+
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, Data Structures
+
+**Competent:** HTML, CSS, JavaScript, Docker, C
+
+**Familiar:** HTML, CSS, JavaScript, Node.js, React
+
+## Jarvis Projects
+
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KishorSivapalan](https://github.com/jarviscanada/jarvis_data_eng_KishorSivapalan)
+
+
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KishorSivapalan/tree/master/linux_sql)]: Developed a monitoring agent that records hardware information and resource usage data from a node in a cluster. Project was created using Linux CLI, Bash scripts, PostgreSQL, Docker and IntelliJ IDE.
+
+
+## Highlighted Projects
+**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.
+
+**Machine Learning**: temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.
+
+
+## Professional Experiences
+
+**Software Developer, Jarvis (2022-Present)**: Developed various projects using Agile and GitFlow methodologies.
+
+
+## Education
+**York University (2015-2020)**, Bachelor of Engineering (Hons.), Electrical and Computer Engineering
+- GPA: 3.5/4.0
+
+
+## Miscellaneous
+- Udacity Machine Learning (2019)
+- Winner
+- Basketball player
+- Competitive gaming
+- Volunteer, ABC Food bank: Ut enim ad minim veniam
