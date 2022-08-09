@@ -66,12 +66,12 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "Web app for resturant"
+  - name: "Arm & Leg Robotics for Neuro-Rehabilitation"
     #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    git_url:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string."
-  - name: "Machine Learning"
+  - name: "SmartShoppers System"
     git_url:
     description: "temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string."
 
@@ -86,12 +86,15 @@ professional_experience:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Developed various projects using Agile and GitFlow methodologies."
 
-#List of edcuation
+#List of education
 education: 
   - school_name: "York University"
     duration: "2015-2020"
     degree: "Bachelor of Engineering (Hons.)"
-    department: "Electrical and Computer Engineering (GPA: 3.5/4.0)"
+    department: "Electrical and Computer Engineering"
+    # optional
+    awards_achievements:
+      - "GPA: 3.5/4.0"
 
 #Optional section
 others:

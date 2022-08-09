@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KishorSiva
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.
+**Arm & Leg Robotics for Neuro-Rehabilitation**: temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.
 
-**Machine Learning**: temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.
+**SmartShoppers System**: temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.
 
 
 ## Professional Experiences

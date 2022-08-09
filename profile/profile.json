@@ -14,13 +14,13 @@
   "highlighted_projects": [
     {
       "description": "temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
+      "git_url": null,
+      "name": "Arm \u0026 Leg Robotics for Neuro-Rehabilitation"
     },
     {
       "description": "temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.temp string.",
       "git_url": null,
-      "name": "Machine Learning"
+      "name": "SmartShoppers System"
     }
   ],
   "jarvis_projects": [
