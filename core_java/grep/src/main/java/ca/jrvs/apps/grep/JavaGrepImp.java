@@ -1,10 +1,39 @@
 package ca.jrvs.apps.grep;
 
+import com.sun.org.slf4j.internal.Logger;
+import com.sun.org.slf4j.internal.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 public class JavaGrepImp implements JavaGrep {
+
+    final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+
+    private String regex;
+    private String rootPath;
+    private String outFile;
+
+    public static void main(String[] args) {
+        if (args.length != 3) {
+            throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
+        }
+
+        JavaGrepImp javaGrepImp = new JavaGrepImp(args[0], args[1], args[2]);
+
+        try {
+            javaGrepImp.process();
+        } catch (Exception ex){
+            javaGrepImp.logger.error("ERROR: Cannot process", ex);
+        }
+    }
+
+    public JavaGrepImp(String regex, String rootPath, String outFile) {
+        this.regex = regex;
+        this.rootPath = rootPath;
+        this.outFile = outFile;
+    }
 
     @Override
     public void process() throws IOException {
@@ -33,31 +62,31 @@ public class JavaGrepImp implements JavaGrep {
 
     @Override
     public String getRootPath() {
-        return null;
+        return rootPath;
     }
 
     @Override
     public void setRootPath(String rootPath) {
-
+        this.rootPath = rootPath;
     }
 
     @Override
     public String getRegex() {
-        return null;
+        return regex;
     }
 
     @Override
     public void setRegex(String regex) {
-
+        this.regex = regex;
     }
 
     @Override
     public String getOutFile() {
-        return null;
+        return outFile;
     }
 
     @Override
     public void setOutFile(String outFile) {
-
+        this.outFile = outFile;
     }
 }
