@@ -3,10 +3,7 @@ package ca.jrvs.apps.grep;
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -66,7 +63,7 @@ public class JavaGrepImp implements JavaGrep {
             for (File file : rootFiles){
                 if (file.isFile()){
                     result.add(file);
-                }else if (file.isDirectory()){
+                } else if (file.isDirectory()){
                     result.addAll(listFiles(file.getAbsolutePath()));
                 }
             }
@@ -76,7 +73,16 @@ public class JavaGrepImp implements JavaGrep {
 
     @Override
     public List<String> readLines(File inputFile) {
-        return null;
+        List<String> lines = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(inputFile))) {
+            String curr;
+            while ((curr = br.readLine()) != null) {
+                lines.add(curr);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return lines;
     }
 
     @Override
