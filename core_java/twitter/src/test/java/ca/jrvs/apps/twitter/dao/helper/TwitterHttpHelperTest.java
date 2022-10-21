@@ -19,7 +19,7 @@ public class TwitterHttpHelperTest {
         String status = "testing the twitter api";
         PercentEscaper percentEscaper = new PercentEscaper("", false);
         HttpResponse response = twitterHelper.httpPost(
-                new URI("https://api.twitter.com/1.1/statuses/update.json?status="
+                new URI("https://api.twitter.com/1.1/statuses/update.json?status=first_tweet2"
                         + percentEscaper.escape(status)));
         System.out.println(EntityUtils.toString(response.getEntity()));
     }
@@ -34,7 +34,7 @@ public class TwitterHttpHelperTest {
                 TOKEN_SECRET);
         HttpResponse response = twitterHelper.httpGet(
                 new URI(
-                        "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=VishaySingh35"));
+                        "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=elonmusk"));
         System.out.println(EntityUtils.toString(response.getEntity()));
     }
 }
