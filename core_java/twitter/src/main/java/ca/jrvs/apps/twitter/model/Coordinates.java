@@ -12,17 +12,17 @@ import java.util.List;
 public class Coordinates {
 
     @JsonProperty("coordinates")
-    private List<Double> coordinates;
+    public float[] coordinates;
     @JsonProperty("type")
-    private String type;
+    public String type;
 
     @JsonGetter
-    public List<Double> getCoordinates() {
+    public float[] getCoordinates() {
         return coordinates;
     }
 
     @JsonSetter
-    public void setCoordinates(List<Double> coordinates) {
+    public void setCoordinates(float[] coordinates) {
         this.coordinates = coordinates;
     }
 
