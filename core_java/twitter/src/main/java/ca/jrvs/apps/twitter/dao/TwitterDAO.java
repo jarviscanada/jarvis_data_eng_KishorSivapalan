@@ -1,6 +1,7 @@
 package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
+import ca.jrvs.apps.twitter.model.Coordinates;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.example.JsonParser;
 import com.google.gdata.util.common.base.PercentEscaper;
@@ -30,7 +31,7 @@ public class TwitterDAO implements CrdDao<Tweet, String>{
 
     final Logger logger = LoggerFactory.getLogger(TwitterDAO.class);
 
-    private HttpHelper httpHelper;
+    private final HttpHelper httpHelper;
 
     @Autowired
     public TwitterDAO(HttpHelper httpHelper) {
@@ -53,13 +54,13 @@ public class TwitterDAO implements CrdDao<Tweet, String>{
 
     public URI getPostUri(Tweet tweet) throws URISyntaxException {
         PercentEscaper pe = new PercentEscaper("", false);
-        String longitude = String.valueOf(tweet.getCoordinates().getCoordinates()[0]);
-        String latitude = String.valueOf(tweet.getCoordinates().getCoordinates()[1]);
+        Coordinates coordinates = tweet.getCoordinates();
+        String longitude = String.valueOf(coordinates.getCoordinates().get(1).toString());
+        String latitude = String.valueOf(coordinates.getCoordinates().get(0).toString());
         String text = tweet.getText();
 
         //https://api.twitter.com/1.1/statuses/update.json?status=Hello&long=49.0&lat=79.0
-        return new URI(API_BASE_URI+POST_PATH+QUERY_SYM+"status"+EQUAL
-                +pe.escape(text)+AMPERSAND+"long"+EQUAL+longitude+AMPERSAND+"lat"+EQUAL+latitude);
+        return new URI(API_BASE_URI+POST_PATH+QUERY_SYM+"status"+EQUAL +pe.escape(text)+AMPERSAND+"long"+EQUAL+longitude+AMPERSAND+"lat"+EQUAL+latitude);
     }
 
     @Override
