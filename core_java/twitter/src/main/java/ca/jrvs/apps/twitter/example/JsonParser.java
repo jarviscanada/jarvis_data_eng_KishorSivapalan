@@ -28,10 +28,10 @@ public class JsonParser {
         return (T) m.readValue(json, cl);
     }
 
-    public static void main(String[] args) throws IOException {
-        Company company = toObjectFromJson(companyStr, Company.class);
-        System.out.println(toJson(company, true, false));
-    }
+//    public static void main(String[] args) throws IOException {
+//        Company company = toObjectFromJson(companyStr, Company.class);
+//        System.out.println(toJson(company, true, false));
+//    }
 
     public static final String companyStr = "{\n"
             + "   \"symbol\":\"AAPL\",\n"
